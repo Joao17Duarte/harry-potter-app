@@ -13,17 +13,16 @@ export default function Card(imagePath, name, house) {
     characterHouse,
     characterImage
   )
+
+  el.style.backgroundColor = identifyHouseColor(house)
+
+  function identifyHouseColor(house) {
+    if (house === 'Gryffindor') return 'var(--color-gryffindor)'
+    if (house === 'Slytherin') return 'var(--color-slytherin)'
+    if (house === 'Hufflepuff') return 'var(--color-hufflepuff)'
+    if (house === 'Ravenclaw') return 'var(--color-ravenclaw)'
+    if (house === '') return 'var(--color-staff)'
+  }
+
   return el
 }
-
-// const houseColors = function identifyHouseColor() {
-//   if (house === 'Gryffindor') {
-//     return (Card.style.background = '#c50000')
-//   } else if (house === 'Slytherin') {
-//     return (Card.style.background = '#2a623d')
-//   } else if (house === 'Hufflepuff') {
-//     return (Card.style.background = '#ffdb00')
-//   } else {
-//     return (Card.style.background = '#1d72b4')
-//   }
-// }
