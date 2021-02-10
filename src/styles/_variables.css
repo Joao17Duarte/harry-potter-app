@@ -1,5 +1,11 @@
 :root {
-  --color-white: #fefefe;
+  --color-bg: #eee;
   --color-black: #111;
   --color-primary: #333;
+  --color-gryffindor: #c50000;
+  --color-slytherin: #2a623d;
+  --color-hufflepuff: #fa9f42;
+  --color-ravenclaw: #1d72b4;
+  --color-staff: #7953a9;
+  --font-color: #e0e0e2;
 }
