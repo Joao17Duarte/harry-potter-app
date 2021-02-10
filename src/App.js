@@ -13,7 +13,9 @@ export default function App() {
     .catch(error => errorHandler(error))
 
   function createCards(characters) {
-    const cards = characters.map(character => Card(character.name))
+    const cards = characters.map(character =>
+      Card(character.image, character.name, character.house)
+    )
     document.body.append(...cards)
   }
 
