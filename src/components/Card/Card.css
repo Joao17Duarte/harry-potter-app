@@ -1,4 +1,10 @@
-.Card {
+.Card__Container {
+  background: hotpink;
+  display: grid;
+  gap: 20px;
+}
+
+.Card__El {
   padding: 20px;
   background: #eee;
   margin: 20px;
@@ -6,12 +12,12 @@
   border-radius: 15px;
 }
 
-.Card h2 {
+.Card__El h2 {
   font-size: 1em;
 }
 
-.Card img {
+.Card__El img {
   width: auto;
   height: 250px;
-  border-radius: 25px;
+  border-radius: 20px;
 }

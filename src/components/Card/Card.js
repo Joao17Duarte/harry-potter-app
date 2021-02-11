@@ -6,9 +6,11 @@ export default function Card(imagePath, name, house) {
   const characterName = createElement('h2', { innerText: name })
   const characterHouse = createElement('p', { innerText: house })
 
+  const container = createElement('div', { className: 'Card__Container' })
+
   const el = createElement(
-    'section',
-    { className: 'Card' },
+    'div',
+    { className: 'Card__El' },
     characterName,
     characterHouse,
     characterImage
@@ -24,5 +26,7 @@ export default function Card(imagePath, name, house) {
     if (house === '') return 'var(--color-staff)'
   }
 
-  return el
+  document.body.append(container)
+
+  container.append(el)
 }
