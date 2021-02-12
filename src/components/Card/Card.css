@@ -1,15 +1,12 @@
-.Card__Container {
-  background: hotpink;
-  display: grid;
-  gap: 20px;
-}
-
 .Card__El {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background: #eee;
-  margin: 20px;
   text-align: center;
   border-radius: 15px;
+  line-height: 2.5em;
 }
 
 .Card__El h2 {
@@ -17,7 +14,9 @@
 }
 
 .Card__El img {
-  width: auto;
-  height: 250px;
+  justify-self: center;
+  align-self: center;
+  width: 100px;
+  height: 150px;
   border-radius: 20px;
 }

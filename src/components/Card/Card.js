@@ -1,12 +1,10 @@
 import './Card.css'
 import createElement from '../../lib/createElement'
 
-export default function Card(imagePath, name, house) {
-  const characterImage = createElement('img', { src: imagePath })
+export default function Card({ image, name, house }) {
+  const characterImage = createElement('img', { src: image })
   const characterName = createElement('h2', { innerText: name })
-  const characterHouse = createElement('p', { innerText: house })
-
-  const container = createElement('div', { className: 'Card__Container' })
+  const characterHouse = createElement('span', { innerText: house })
 
   const el = createElement(
     'div',
@@ -26,7 +24,5 @@ export default function Card(imagePath, name, house) {
     if (house === '') return 'var(--color-staff)'
   }
 
-  document.body.append(container)
-
-  container.append(el)
+  return el
 }

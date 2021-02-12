@@ -5,9 +5,13 @@ import createElement from '../../lib/createElement'
 export default function HouseFilter(onFilterByHouse) {
   const houses = ['Gryffindor', 'Slytherin', 'Ravenclaw', 'Hufflepuff']
 
+  let currentFilter
+
   const buttons = houses.map(house => {
     const button = Button(house, () => {
-      onFilterByHouse(house)
+      currentFilter = currentFilter === house ? null : house
+      onFilterByHouse(currentFilter)
+      buttons.forEach(button => button.toggle(button.text === currentFilter))
     })
     return button
   })

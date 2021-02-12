@@ -5,4 +5,4 @@ export default {
   component: Button,
 }
 
-export const defaultButton = () => Button('Text').el
+export const defaultButton = () => Button('Text')
