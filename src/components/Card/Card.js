@@ -1,14 +1,14 @@
 import './Card.css'
 import createElement from '../../lib/createElement'
 
-export default function Card(imagePath, name, house) {
-  const characterImage = createElement('img', { src: imagePath })
+export default function Card({ image, name, house }) {
+  const characterImage = createElement('img', { src: image })
   const characterName = createElement('h2', { innerText: name })
-  const characterHouse = createElement('p', { innerText: house })
+  const characterHouse = createElement('span', { innerText: house })
 
   const el = createElement(
-    'section',
-    { className: 'Card' },
+    'div',
+    { className: 'Card__El' },
     characterName,
     characterHouse,
     characterImage

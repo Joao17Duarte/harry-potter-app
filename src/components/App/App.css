@@ -1,0 +1,11 @@
+.App {
+  display: grid;
+  gap: 40px;
+  padding: 12px;
+}
+
+.Card__Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
