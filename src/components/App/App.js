@@ -22,13 +22,12 @@ export default function App() {
 
   getCharacters()
     .then(data => {
-      characters = data
       createCards(data)
+      characters = data
     })
     .catch(error => errorHandler(error))
 
   function onFilterByHouse(house) {
-    console.log('App says: ', house)
     const filteredCharacters = characters.filter(
       character => house == null || character.house === house
     )

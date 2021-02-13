@@ -1,5 +1,6 @@
 import './Card.css'
 import createElement from '../../lib/createElement'
+// import getCharacters from '../../services/getCharacters'
 
 export default function Card({ image, name, house }) {
   const characterImage = createElement('img', { src: image })
@@ -23,6 +24,13 @@ export default function Card({ image, name, house }) {
     if (house === 'Ravenclaw') return 'var(--color-ravenclaw)'
     if (house === '') return 'var(--color-staff)'
   }
+
+  // function isDead() {
+  //   const el =
+  //   if (character.alive === false) {
+  //     el.style.filter = 'grayscale(85%)'
+  //   }
+  // }
 
   return el
 }
