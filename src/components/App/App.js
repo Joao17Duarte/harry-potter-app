@@ -28,7 +28,6 @@ export default function App() {
     .catch(error => errorHandler(error))
 
   function onFilterByHouse(house) {
-    console.log('App says: ', house)
     const filteredCharacters = characters.filter(
       character => house == null || character.house === house
     )

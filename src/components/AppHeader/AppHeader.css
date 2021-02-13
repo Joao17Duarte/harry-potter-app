@@ -2,6 +2,7 @@
   background: var(--color-primary);
   color: var(--color-white);
   padding: 12px;
+  border-radius: 15px;
 }
 
 .AppHeader h1 {
